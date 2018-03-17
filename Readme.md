@@ -1,5 +1,7 @@
+# Android 程式作業
+***
 ## HW1
-#####作業說明：
+##### 作業說明：
 
 1. change the app title from "My Application" to "婚姻建議".
 2. change the resource values (strings.xml) as follows:
