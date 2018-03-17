@@ -24,12 +24,12 @@
 ##### 作業說明：
 
 1. change the app title from "HW#2: your name".
-<br />
+
 2. (try to convert the Chinese characters into English in your the program and corresponding resource values (strings.xml) For example:
-    * using "male" instead of "男" and "female" instead of "女"
-    * using  "age" instead of "年齡"
-    * using "find a couple" instead of "開始找對象"
-    ...
+    <dd>using "male" instead of "男" and "female" instead of "女"</dd>
+    <dd>using  "age" instead of "年齡"</dd>
+    <dd>using "find a couple" instead of "開始找對象"</dd>
+    <dd>...</dd>
 ***
 
 作業說明參考連結：[點我](http://www.cc.ntut.edu.tw/~cliu/courses/ad/homework/homework.htm)
