@@ -1,7 +1,7 @@
-#Android 程式作業
+# Android 程式作業
 ***
 ## HW2
-####作業說明：
+#### 作業說明：
 
 1. change the app title from "HW#2: your name".
 <br />
