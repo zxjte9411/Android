@@ -1,6 +1,6 @@
-#Android 程式作業
+# Android 程式作業
 <br />
-目前已提交的作業進度
+### 目前已提交的作業進度：
 
 * [HW1](#HW1)
 * [HW2](#HW2)
@@ -8,7 +8,7 @@
 
 ***
 ## HW1
-#####作業說明：
+##### 作業說明：
 
 1. change the app title from "My Application" to "婚姻建議".
 2. change the resource values (strings.xml) as follows:
@@ -21,7 +21,7 @@
 
 ***
 ## HW2
-#####作業說明：
+##### 作業說明：
 
 1. change the app title from "HW#2: your name".
 <br />
@@ -30,6 +30,7 @@
     using  "age" instead of "年齡"
     using "find a couple" instead of "開始找對象"
     ...
+
 ***
 
 作業說明參考連結：[點我](http://www.cc.ntut.edu.tw/~cliu/courses/ad/homework/homework.htm)
