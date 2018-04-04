@@ -17,12 +17,13 @@
         <item>大於35歲</item>
     </string-array>
 
-    <!--<string name="maleAgeRange1">小於30歲</string>-->
-    <!--<string name="maleAgeRange2">30~40歲</string>-->
-    <!--<string name="maleAgeRange3">大於40歲</string>-->
-    <!--<string name="femaleAgeRange1">小於28歲</string>-->
-    <!--<string name="femaleAgeRange2">28~35歲</string>-->
-    <!--<string name="femaleAgeRange3">大於35歲</string>-->
+    <string name="maleAgeRange1">小於30歲</string>
+    <string name="maleAgeRange2">30~40歲</string>
+    <string name="maleAgeRange3">大於40歲</string>
+    <string name="femaleAgeRange1">小於28歲</string>
+    <string name="femaleAgeRange2">28~35歲</string>
+    <string name="femaleAgeRange3">大於35歲</string>
+
     <string name="btnOK">確定</string>
     <string name="suggestion">建議:</string>
 

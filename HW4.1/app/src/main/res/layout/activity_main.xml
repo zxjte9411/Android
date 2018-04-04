@@ -58,10 +58,8 @@
 
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/scrollView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        
+        android:layout_height="135sp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -74,7 +72,6 @@
                 android:layout_height="wrap_content"
                 android:text="@string/music"
                 android:textSize="20sp" />
-
 
             <CheckBox
                 android:id="@+id/checkBox2"
@@ -138,14 +135,24 @@
                 android:layout_height="wrap_content"
                 android:text="@string/drawing"
                 android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/btnOK"
+        android:textSize="18sp" />
 
-            <Button
-                android:id="@+id/btnOk"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:text="@string/btnOK"
-                android:textSize="18sp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="172dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textView6"
@@ -165,15 +172,15 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="愛好"
+                android:text="愛好："
                 android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/hobbies"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="64dp"
+                android:layout_gravity="center_horizontal"
                 android:textSize="20sp" />
-
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

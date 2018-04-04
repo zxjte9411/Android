@@ -8,25 +8,27 @@ import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.NumberPicker;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
     //宣告變數
     private Spinner mSpnAge;
     private RadioGroup mRadGrp;
-    private RadioButton mMale;
-    private RadioButton mFemale;
-    private RadioButton mRadBtnAgeRange3;
     private Button mBtnOk;
     private TextView mTxtSug;
-    private String selectedSex;
+    private TextView mTxtHob;
     private ArrayAdapter<CharSequence> arrAdapSpnMaleAge;
     private ArrayAdapter<CharSequence> arrAdapSpnFemaleAge;
-
+    private ArrayList<CheckBox> hobbies = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);      //預設會跑出來的東西
@@ -37,11 +39,23 @@ public class MainActivity extends AppCompatActivity {
         arrAdapSpnFemaleAge = ArrayAdapter.createFromResource(MainActivity.this, R.array.femaleAgeRange,R.layout.support_simple_spinner_dropdown_item);
         mSpnAge.setAdapter(arrAdapSpnMaleAge);//預設下拉選單
         mRadGrp = (RadioGroup) findViewById(R.id.radGrpAge);
-        mMale = (RadioButton) findViewById(R.id.male);
-        mFemale = (RadioButton) findViewById(R.id.female);
+
         mBtnOk = (Button) findViewById(R.id.btnOk);
         mTxtSug = (TextView) findViewById(R.id.txtSug);
+        mTxtHob = (TextView) findViewById(R.id.hobbies);
+        //初始化 ArrayList
+        hobbies.add((CheckBox) findViewById(R.id.checkBox1));
+        hobbies.add((CheckBox) findViewById(R.id.checkBox2));
+        hobbies.add((CheckBox) findViewById(R.id.checkBox3));
+        hobbies.add((CheckBox) findViewById(R.id.checkBox4));
+        hobbies.add((CheckBox) findViewById(R.id.checkBox5));
+        hobbies.add((CheckBox) findViewById(R.id.checkBox6));
+        hobbies.add((CheckBox) findViewById(R.id.checkBox7));
+        hobbies.add((CheckBox) findViewById(R.id.checkBox8));
+        hobbies.add((CheckBox) findViewById(R.id.checkBox9));
+        hobbies.add((CheckBox) findViewById(R.id.checkBox10));
         //設置監聽
+        //mSpnAge.setOnItemSelectedListener(spnOnItemSelect);
         mBtnOk.setOnClickListener(btnOKOnClick);
         mRadGrp.setOnCheckedChangeListener(radioOnClick);
     }
@@ -61,25 +75,65 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
+//    private AdapterView.OnItemSelectedListener spnOnItemSelect = new AdapterView.OnItemSelectedListener() {//監聽 Spinner
+//        @Override
+//        public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+//
+//        }
+//
+//        @Override
+//        public void onNothingSelected(AdapterView<?> parent) {
+//
+//        }
+//    };
+
     private View.OnClickListener btnOKOnClick = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             MarriageSuggestion objms = new MarriageSuggestion();
-
-            String strSex = mSpnAge.getSelectedItem().toString();
-            //mSpnAge.setAdapter(arrAdapSpnMaleAge);
+            String strSex = "",strHobbies = "";
             int iAgeRange = 0;
-
             switch(mRadGrp.getCheckedRadioButtonId()){
                 case R.id.male:
-                    iAgeRange = 1;
+                    strSex = "male";
                     break;
                 case R.id.female:
-
-                    iAgeRange = 2;
+                    strSex = "female";
                     break;
             }
+            switch (mSpnAge.getSelectedItem().toString()){
+                case "小於30歲":
+                    iAgeRange = 1;
+                    break;
+                case "30~40歲":
+                    iAgeRange = 2;
+                    break;
+                case "大於40歲":
+                    iAgeRange = 3;
+                    break;
+                case "小於28歲":
+                    iAgeRange = 1;
+                    break;
+                case "28~35歲":
+                    iAgeRange = 2;
+                    break;
+                case "大於35歲":
+                    iAgeRange = 3;
+                    break;
+            }
+            int size = hobbies.size();
+            for (int i=0,j=0;i<size;i++){
+                if (hobbies.get(i).isChecked()){
+                    j++;
+                    if (j != 1 && j <= hobbies.size())
+                        strHobbies += "，";
+                    strHobbies += hobbies.get(i).getText();
+                }
+
+            }
+            strHobbies.length();
             mTxtSug.setText(objms.getSuggestion(strSex,iAgeRange));
+            mTxtHob.setText(strHobbies);
         }
     };
 }
