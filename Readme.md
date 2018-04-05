@@ -7,7 +7,7 @@
 * [HW1](#hw1)
 * [HW2](#hw2)
 * [HW3](#hw3)
-* [HW4.1](#hw4.1)
+* [HW4.1](#hw4-1)
 
 ***
 ## HW1
@@ -69,7 +69,7 @@
 * female, 40 < age, family number = 8
 
 ***
-## HW4.1
+## HW4-1
 ##### 作業說明：
 
 1. Change the app title to "作業四之一: your name".
