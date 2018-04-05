@@ -94,4 +94,5 @@
        <string name="drawing">繪畫</string>
 
 6. Add a TextView (in addition to marriage suggestion) to show the hobbies selected by users.
-作業說明參考連結：[點我](http://www.cc.ntut.edu.tw/~cliu/courses/ad/homework/homework.htm)
+
+  作業說明參考連結：[點我](http://www.cc.ntut.edu.tw/~cliu/courses/ad/homework/homework.htm)
