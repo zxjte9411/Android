@@ -1,23 +1,17 @@
 package npc.ntut.hw4_1;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-import android.widget.Adapter;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
-import android.widget.NumberPicker;
-import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     //宣告變數
@@ -29,14 +23,15 @@ public class MainActivity extends AppCompatActivity {
     private ArrayAdapter<CharSequence> arrAdapSpnMaleAge;
     private ArrayAdapter<CharSequence> arrAdapSpnFemaleAge;
     private ArrayList<CheckBox> hobbies = new ArrayList<>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);      //預設會跑出來的東西
         setContentView(R.layout.activity_main);     //預設會跑出來的東西
         //為變數指定ID
         mSpnAge = (Spinner) findViewById(R.id.spnAge);
-        arrAdapSpnMaleAge = ArrayAdapter.createFromResource(MainActivity.this, R.array.maleAgeRange,R.layout.support_simple_spinner_dropdown_item);//設定下拉選單內容
-        arrAdapSpnFemaleAge = ArrayAdapter.createFromResource(MainActivity.this, R.array.femaleAgeRange,R.layout.support_simple_spinner_dropdown_item);
+        arrAdapSpnMaleAge = ArrayAdapter.createFromResource(MainActivity.this, R.array.maleAgeRange, R.layout.support_simple_spinner_dropdown_item);//設定下拉選單內容
+        arrAdapSpnFemaleAge = ArrayAdapter.createFromResource(MainActivity.this, R.array.femaleAgeRange, R.layout.support_simple_spinner_dropdown_item);
         mSpnAge.setAdapter(arrAdapSpnMaleAge);//預設下拉選單
         mRadGrp = (RadioGroup) findViewById(R.id.radGrpAge);
 
@@ -63,8 +58,7 @@ public class MainActivity extends AppCompatActivity {
     private RadioGroup.OnCheckedChangeListener radioOnClick = new RadioGroup.OnCheckedChangeListener() {//以所選的 RadioButton 來改變 Spinner 的內容
         @Override
         public void onCheckedChanged(RadioGroup group, int checkedId) {
-            Log.v("waaa", String.valueOf(checkedId));
-            switch (checkedId){
+            switch (checkedId) {
                 case R.id.male:
                     mSpnAge.setAdapter(arrAdapSpnMaleAge);
                     break;
@@ -91,9 +85,9 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             MarriageSuggestion objms = new MarriageSuggestion();
-            String strSex = "",strHobbies = "";
+            String strSex = "", strHobbies = "";
             int iAgeRange = 0;
-            switch(mRadGrp.getCheckedRadioButtonId()){
+            switch (mRadGrp.getCheckedRadioButtonId()) {
                 case R.id.male:
                     strSex = "male";
                     break;
@@ -101,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
                     strSex = "female";
                     break;
             }
-            switch (mSpnAge.getSelectedItem().toString()){
+            switch (mSpnAge.getSelectedItem().toString()) {
                 case "小於30歲":
                     iAgeRange = 1;
                     break;
@@ -122,17 +116,16 @@ public class MainActivity extends AppCompatActivity {
                     break;
             }
             int size = hobbies.size();
-            for (int i=0,j=0;i<size;i++){
-                if (hobbies.get(i).isChecked()){
-                    j++;
-                    if (j != 1 && j <= hobbies.size())
+            boolean isFirstHobbies = true;
+            for (int i = 0, j = 0; i < size; i++) {
+                if (hobbies.get(i).isChecked()) {
+                    if (!isFirstHobbies)
                         strHobbies += "，";
                     strHobbies += hobbies.get(i).getText();
+                    isFirstHobbies = false;
                 }
-
             }
-            strHobbies.length();
-            mTxtSug.setText(objms.getSuggestion(strSex,iAgeRange));
+            mTxtSug.setText(objms.getSuggestion(strSex, iAgeRange));
             mTxtHob.setText(strHobbies);
         }
     };
