@@ -8,6 +8,7 @@
 * [HW2](#hw2)
 * [HW3](#hw3)
 * [HW4-1](#hw4-1)
+* [HW4-2](#hw4-2)
 
 ***
 ## HW1
@@ -95,22 +96,19 @@
 
 6. Add a TextView (in addition to marriage suggestion) to show the hobbies selected by users.
 
-
-
-##HW4
+***
+##HW4-2
 ##### 作業說明：
+
   Clone or download the sample code Unit018 from [Here](https://github.com/cxl1521/SampleCode.git)
 
   Import the sample code and modify the code according to the following requirements.
 
-    1. Change the app title to "作業四之二: your name".
-  2. Change the layout to switch right-hand-side to left-hand-side and vice versa.
-    3. Try to create a pure Java class/method so that 3 btnXXXonClick() listeners can call this pure Java method to handle 電腦出拳 (instead doing this within the OnClickListener). 
-    4. Write the JUnit test for your pure Java method.
+1. Change the app title to "作業四之二: your name".
+2. Change the layout to switch right-hand-side to left-hand-side and vice versa.
+3. Try to create a pure Java class/method so that 3 btnXXXonClick() listeners can call this pure Java method to handle 電腦出拳 (instead doing this within the OnClickListener). 
+4. Write the JUnit test for your pure Java method.
 
 
-
-
-
-
-  作業說明參考連結：[點我](http://www.cc.ntut.edu.tw/~cliu/courses/ad/homework/homework.htm)
+***
+作業說明參考連結：[點我](http://www.cc.ntut.edu.tw/~cliu/courses/ad/homework/homework.htm)
