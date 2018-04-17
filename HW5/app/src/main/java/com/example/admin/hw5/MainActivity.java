@@ -231,8 +231,8 @@ public class MainActivity extends AppCompatActivity implements ViewSwitcher.View
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
             int select = (int)Math.floor(Math.random() * 4);
             Log.v("waaa", String.valueOf(select));
-            mImgSwitcher.setInAnimation(animationList[0]);
-            mImgSwitcher.setOutAnimation(animationList[1]);
+            mImgSwitcher.setInAnimation(animationList[select * 2]);
+            mImgSwitcher.setOutAnimation(animationList[select * 2 + 1]);
             Toast.makeText(MainActivity.this, String.valueOf(select), Toast.LENGTH_SHORT).show();
             mImgSwitcher.setImageResource(miImgArr[position]);
         }
