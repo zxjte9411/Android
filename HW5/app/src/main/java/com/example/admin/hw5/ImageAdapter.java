@@ -40,10 +40,9 @@ public class ImageAdapter extends BaseAdapter {
         // 如果convertView不是null，就重複使用它。
         if (convertView == null) {
             v = new ImageView(mContext);
-            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
-                    LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT);
+            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT);
             v.setLayoutParams(new GridView.LayoutParams(params));
-            v.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
+            v.setScaleType(ImageView.ScaleType.CENTER_CROP);
             v.setPadding(10, 10, 10, 10);
         }
         else
