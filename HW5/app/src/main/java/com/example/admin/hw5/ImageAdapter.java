@@ -1,4 +1,5 @@
 package com.example.admin.hw5;
+
 import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,7 +10,7 @@ import android.widget.LinearLayout;
 
 public class ImageAdapter extends BaseAdapter {
 
-    private Context mContext;    // 儲存程式的執行環境。
+    private Context mContext;        // 儲存程式的執行環境。
     private Integer[] miImgArr; 	 // 儲存影像縮圖id陣列。
 
     public ImageAdapter(Context context, Integer[] imgArr) {
@@ -40,7 +41,7 @@ public class ImageAdapter extends BaseAdapter {
         // 如果convertView不是null，就重複使用它。
         if (convertView == null) {
             v = new ImageView(mContext);
-            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT);
+            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, 250);
             v.setLayoutParams(new GridView.LayoutParams(params));
             v.setScaleType(ImageView.ScaleType.CENTER_CROP);
             v.setPadding(10, 10, 10, 10);
