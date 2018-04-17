@@ -9,6 +9,7 @@
 * [HW3](#hw3)
 * [HW4-1](#hw4-1)
 * [HW4-2](#hw4-2)
+* [HW5](#hw5)
 
 ***
 ## HW1
@@ -109,6 +110,16 @@
 3. Try to create a pure Java class/method so that 3 btnXXXonClick() listeners can call this pure Java method to handle 電腦出拳 (instead doing this within the OnClickListener). 
 4. Write the JUnit test for your pure Java method.
 
+***
+## HW5
+#####作業說明：
+Clone or download the sample code Unit023 from [Here](https://github.com/cxl1521/SampleCode.git)
+Import the sample code and modify the code according to the following requirements.
+1. Change the app title to "作業五: your name".
+2. Change the setting or configuration of all animation resource xml files, including alpha, scale, and trans.
+3. Create two additional animation resource files scale_rotate_trans_in and scale_rotate_trans_out, give necessary and proper settings for these two files, and change the program so that these two animation resource will be used in the program.
+4. Change the columns to 4 for GridView and add the images files upto 12 (or more) to the drawable directory  and change the program accordingly. 
+5. Implement the AlphaAnimation, ScaleAnimation, TranslateAnimation, and RotateAnimation classes corresponding to your  animation resource files in step 2. Change your program to use AnimationSet to combine these classes so as to implement above animation instead of using animation resource files.
 
 ***
 作業說明參考連結：[點我](http://www.cc.ntut.edu.tw/~cliu/courses/ad/homework/homework.htm)
