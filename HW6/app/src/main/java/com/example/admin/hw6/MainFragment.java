@@ -107,26 +107,22 @@ public class MainFragment extends Fragment {
 
     public void resultDice() {
         int num = (int) (Math.random() * 6);
-        Log.v("pwpwpwpwp", "owowowowow");
         mImgDice.setImageDrawable(getResources().getDrawable(diceImg[num]));
         miCountSet += 1;
         String result;
         switch (num / 2) {
             case 0:
                 result = getString(R.string.result) + getString(R.string.player_draw);
-                Log.v("0", result);
                 mTxtResult.setText(result);
                 miCountDraw += 1;
                 break;
             case 1:
                 result = getString(R.string.result) + getString(R.string.player_lose);
-                Log.v("1", result);
                 mTxtResult.setText(result);
                 miCountComWin += 1;
                 break;
             case 2:
                 result = getString(R.string.result) + getString(R.string.player_win);
-                Log.v("2", result);
                 mTxtResult.setText(result);
                 miCountPlayerWin += 1;
                 break;
@@ -141,7 +137,6 @@ public class MainFragment extends Fragment {
             if (MainFragment.this.isDiceRolling) return;
             MainFragment.this.isDiceRolling = true;
 
-            Log.v("waaa", "waaa");
             //從動畫資源中取得動畫檔，設定給ImgeButton物件，然後開始播放
             Resources res = getResources();
             final AnimationDrawable animDraw = (AnimationDrawable) res.getDrawable(R.drawable.anim_roll_dice);
