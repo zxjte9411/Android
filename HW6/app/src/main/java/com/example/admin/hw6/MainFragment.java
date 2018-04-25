@@ -112,19 +112,19 @@ public class MainFragment extends Fragment {
         String result;
         switch (num / 2) {
             case 0:
+                result = getString(R.string.result) + getString(R.string.player_win);
+                mTxtResult.setText(result);
+                miCountPlayerWin += 1;
+                break;
+            case 1:
                 result = getString(R.string.result) + getString(R.string.player_draw);
                 mTxtResult.setText(result);
                 miCountDraw += 1;
                 break;
-            case 1:
+            case 2:
                 result = getString(R.string.result) + getString(R.string.player_lose);
                 mTxtResult.setText(result);
                 miCountComWin += 1;
-                break;
-            case 2:
-                result = getString(R.string.result) + getString(R.string.player_win);
-                mTxtResult.setText(result);
-                miCountPlayerWin += 1;
                 break;
         }
 
