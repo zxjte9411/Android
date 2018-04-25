@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity implements MainFragment.Call
         }
 
     }
-
+// Update values immediately
     public void InvokeUpdateResult() {
         mainFragment.UpdateResult();
     }
