@@ -10,6 +10,7 @@
 * [HW4-1](#hw4-1)
 * [HW4-2](#hw4-2)
 * [HW5](#hw5)
+* [HW6](#hw6)
 
 ***
 ## HW1
@@ -121,6 +122,19 @@ Import the sample code and modify the code according to the following requiremen
 3. Create two additional animation resource files scale_rotate_trans_in and scale_rotate_trans_out, give necessary and proper settings for these two files, and change the program so that these two animation resource will be used in the program.
 4. Change the columns to 4 for GridView and add the images files upto 12 (or more) to the drawable directory  and change the program accordingly. 
 5. Implement the AlphaAnimation, ScaleAnimation, TranslateAnimation, and RotateAnimation classes corresponding to your  animation resource files in step 2. Change your program to use AnimationSet to combine these classes so as to implement above animation instead of using animation resource files.
+
+***
+## HW6
+##### 作業說明：
+　
+Clone or download the sample code Unit030 from [Here](https://github.com/cxl1521/SampleCode.git)
+
+Import the sample code and modify the code according to the following requirements.
+1. Change the app title to "作業六: your name".
+2. Change the game scissor-stone-paper  to rolling-a-dice in which a user can click the dice ImageButton and the computer will randomly generate a number ranging from 1 to 6. If the generated number is greater than 4 then computer wins. If the number is equal to 3 or 4, then the result is draw. Otherwise, the user wins. Use a TextView to show the game result (i.e., user wins, computer wins, or draw). Update the program and resource accordingly. 
+3. When the user click the dice, your app shall show a dice-rolling animation in an ImageView. You may refer to Unit024 for drawable animation. 
+4. Keep tracking of the game statistics, including the total number of game that has been played and the total number of computer/user win and draw. Use a fragment to show the game statistics and provide two buttons to show/hide the game result.
+5. The layout of the fragment shall use LinearLayout.
 
 ***
 作業說明參考連結：[點我](http://www.cc.ntut.edu.tw/~cliu/courses/ad/homework/homework.htm)
