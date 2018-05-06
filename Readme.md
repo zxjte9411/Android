@@ -142,7 +142,8 @@ Import the sample code and modify the code according to the following requiremen
 ## HW7
 ##### 作業說明：
 
-Copy your HW#6 to another app and rename the app as HW#7.
+Copy your HW#6 to another app and rename the app as HW#7
+
 Import HW#7 and modify the code according to the following requirements.
 
 1. Change the app title to "作業 七: your name".
