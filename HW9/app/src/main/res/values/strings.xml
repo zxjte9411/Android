@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">作業九by卓旭嘉</string>
+    <string name="background_music">背景音樂</string>
+    <string name="about_this_app">關於這個程式…</string>
+    <string name="choose_example_app">選擇範例程式</string>
+    <string name="ok">OK</string>
+    <string name="over">結束</string>
+    <string name="play_background_music">播放背景音樂</string>
+    <string name="stop_play_background_music">停止播放放背景音樂</string>
+</resources>
