@@ -4,16 +4,16 @@
 
 ### 目前已提交的作業進度：
 
-* [HW1](#hw1)
-* [HW2](#hw2)
-* [HW3](#hw3)
-* [HW4-1](#hw4-1)
-* [HW4-2](#hw4-2)
-* [HW5](#hw5)
-* [HW6](#hw6)
-* [HW7](#hw7)
-* [HW8](#hw8)
-* [HW9]($hw9)
+* [HW1](https://github.com/zxjte9411/Android/archive/hw1.zip)
+* [HW2](https://github.com/zxjte9411/Android/archive/hw2.zip)
+* [HW3](https://github.com/zxjte9411/Android/archive/hw3.zip)
+* [HW4-1](https://github.com/zxjte9411/Android/archive/hw4.1.zip)
+* [HW4-2](https://github.com/zxjte9411/Android/archive/hw4.2.zip)
+* [HW5](https://github.com/zxjte9411/Android/archive/hw5.zip)
+* [HW6](https://github.com/zxjte9411/Android/archive/hw6.zip)
+* [HW7](https://github.com/zxjte9411/Android/archive/hw7.zip)
+* [HW8](https://github.com/zxjte9411/Android/archive/hw8.zip)
+* [HW9](https://github.com/zxjte9411/Android/archive/hw9.zip)
 
 ***
 ## HW1
@@ -129,7 +129,7 @@ Import the sample code and modify the code according to the following requiremen
 ***
 ## HW6
 ##### 作業說明：
-　
+
 Clone or download the sample code Unit030 from [Here](https://github.com/cxl1521/SampleCode.git)
 
 Import the sample code and modify the code according to the following requirements.
