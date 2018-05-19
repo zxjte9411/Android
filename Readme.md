@@ -12,6 +12,8 @@
 * [HW5](#hw5)
 * [HW6](#hw6)
 * [HW7](#hw7)
+* [HW8](#hw8)
+* [HW9]($hw9)
 
 ***
 ## HW1
@@ -152,4 +154,24 @@ Import HW#7 and modify the code according to the following requirements.
 4. Keep tracking of the game statistics, including the total number of game that has been played and the total number of computer/user win and draw. Use another activity to show the game statistics and provide one Button to show the game statistics. 
 5. The layout of the "game-statistics" activity shall use LinearLayout. In addition to show the game statistics, the layout of this activity shall also contain a Button. When the user click that Button, the app will go back to previous activity (i.e., MainActivity).
 ***
+## HW8
+##### 作業說明
+Refer to Unit031, Unit035, Unit038, and Unit044 and develop a simple money bookkeeper app to record the money that the user spends on the meals according to the following requirements:
+
+1. The title of the app shall be "作業 八: your name".
+2. The app shall have two Activities where the MainActivity (the first activity) shall allows users to enter the purchased meal , the purchased date, and the amount of the purchase. The purchased meal can be "Breakfast", "Lunch", or "Dinner" which can be selected by user using a spinner. The user may enter multiple purchases of the meals that he/she brought. The layout the MainActivity is shown in Fig. 8a.
+3. Moreover, when the user clicks datePicker (datePicker mode = spinner) and changes date, the purchased date picked by the user will be displayed on the TextView "日期". Further, when the user clicks the "輸入" Button, your app shall show the purchased amount that the user enters in the EditText "金額" using a Toast as shown in Fig. 8b. 
+4. The user can keep entering the detailed information of each purchased meal in multiple times and all the entered data will be recorded in the MainActivity (may use arrays of primitive types or user-defined Serializable or Parcelable objects).
+5. When the user clicks the the "紀錄" Button on Fig. 8a, the MainActivity will pass all the recorded data to the second activity where the data will be displayed using a ListView as shown in Fig. 8c.
+***
+## HW9
+##### 作業說明：
+Copy your HW#8 to another app and rename the app as HW#9.
+Refer to Unit052 and Unit 053 and modify HW#9 according to the following requirements.
+
+1. Change the app title to "作業 九: your name".
+2. Refer to Unit052 and add a two-level Options Menu to the MainActivity. An example of the Options Menu is shown in Fig. 9a. When the user clicks the menu item "背景音樂", a submenu will show up as Fig. 9b. If the use clicks the menu item "關於這個程式...", an alert dialog will show up as Fig. 9c. Modify your program to add the Menu accordingly. Note that, similar to Unit 052, you will use Service to implement the  services for media player.
+3. Refer to Unit053 and add a Context Menu to the MainActivity. When the user clicks the layout of the MainActivity for more than 1 second, the Context Menu will show up as Fig. 9d. Then, if the user clicks the menu item "背景音樂", a submenu will show up as Fig. 9e. If the use clicks the menu item "關於這個程式...", a dialog will show up as Fig. 9c. Modify your program to add the Context Menu  accordingly. Note that you may use the same Service as implemented in step 2.
+***
+
 作業說明參考連結：[點我](http://www.cc.ntut.edu.tw/~cliu/courses/ad/homework/homework.htm)
