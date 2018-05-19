@@ -8,10 +8,10 @@
         <!-- "file" submenu -->
         <menu>
             <item
-                android:id="@+id/create_new"
+                android:id="@+id/play_background_music"
                 android:title="@string/play_background_music" />
             <item
-                android:id="@+id/open"
+                android:id="@+id/stop_play_background_music"
                 android:title="@string/stop_play_background_music" />
         </menu>
     </item>
