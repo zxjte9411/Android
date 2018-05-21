@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.IBinder;
 import android.util.Log;
+import android.widget.Toast;
 
 public class MediaService extends Service {
 
@@ -34,6 +35,7 @@ public class MediaService extends Service {
     public int onStartCommand(Intent intent, int flags, int startId) {
         Log.d(LOG_TAG,"onStartCommand");
         if(!player.isPlaying())player.start();
+        else Toast.makeText(this, "音樂播放中", Toast.LENGTH_SHORT).show();
         return super.onStartCommand(intent, flags, startId);
     }
 
