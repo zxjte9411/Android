@@ -1,0 +1,15 @@
+<resources>
+   <string name="app_name">作業十by卓旭嘉</string>
+    <string name="name">姓名：</string>
+    <string name="input_name">輸入姓名</string>
+    <string name="phone_number">電話號碼：</string>
+    <string name="input_phone_number">輸入電話號碼：</string>
+    <string name="choose_phone_type">選擇電話類型：</string>
+    <string name="add_new_contact">AddNewContact</string>
+    <string name="text_search_name">依名稱搜尋</string>
+    <string-array name="phone_type">
+        <item>mobile</item>
+        <item>home</item>
+        <item>office</item>
+    </string-array>
+</resources>
