@@ -14,6 +14,7 @@
 * [HW7](https://github.com/zxjte9411/Android/archive/hw7.zip)
 * [HW8](https://github.com/zxjte9411/Android/archive/hw8.zip)
 * [HW9](https://github.com/zxjte9411/Android/archive/hw9.zip)
+* [HW10](https://github.com/zxjte9411/Android/archive/hw10.zip)
 
 ***
 ## HW1
@@ -172,6 +173,18 @@ Refer to Unit052 and Unit 053 and modify HW#9 according to the following require
 1. Change the app title to "作業 九: your name".
 2. Refer to Unit052 and add a two-level Options Menu to the MainActivity. An example of the Options Menu is shown in Fig. 9a. When the user clicks the menu item "背景音樂", a submenu will show up as Fig. 9b. If the use clicks the menu item "關於這個程式...", an alert dialog will show up as Fig. 9c. Modify your program to add the Menu accordingly. Note that, similar to Unit 052, you will use Service to implement the  services for media player.
 3. Refer to Unit053 and add a Context Menu to the MainActivity. When the user clicks the layout of the MainActivity for more than 1 second, the Context Menu will show up as Fig. 9d. Then, if the user clicks the menu item "背景音樂", a submenu will show up as Fig. 9e. If the use clicks the menu item "關於這個程式...", a dialog will show up as Fig. 9c. Modify your program to add the Context Menu  accordingly. Note that you may use the same Service as implemented in step 2.
+***
+
+
+## HW10
+##### 作業說明：
+Refer to Unit052, Unit053, Unit057, Unit 060 and implement the following requirements.
+
+1. Change the app title to "作業 十: your name".
+2. Refer to Unit027 and create two Fragments: "AddNewContact" and "SearchContact". The AddNewContact is used to add a new contact (including name, phone number, and the type of phone number). It has two TextViews and corresponding EditTexts for users to enter name and phone number. It also has a Spinner for users to select the type of the phone number, such as mobile, home, and office. The SearchContact will show all the contacts using a ListView and allow users to search a specific contact by giving the name of the contact. If the specific contact is found, your app will highlight the contact in one way or another. Otherwise, show a message like "the contact is not found" using Toast.
+3. Refer to Unit060 and use SQLite to insert (i.e., add) and query (i.e., search) the contact info.
+4. Refer to Unit057 and allow users to switch between the above two Fragments using Tab. You may also use the ViewPager, FragmentPagerAdapter, and TabLayout to implement Tab.
+5. Instead of using Buttons, you may use an Options Menu (Unit052) to implement the action of "adding a new contact" and an Action Bar [with an icon] (Unit054) to implement the action of "searching a contact".
 ***
 
 作業說明參考連結：[點我](http://www.cc.ntut.edu.tw/~cliu/courses/ad/homework/homework.htm)
